@@ -1,0 +1,89 @@
+$primary-softblue : hsl(215, 51%, 70%);
+$primary-cyan: hsl(178, 100%, 50%);
+
+$neutral-mainBG: hsl(217, 54%, 11%);
+$neutral-cardBG: hsl(216, 50%, 16%);
+$neutral-line: hsl(215, 32%, 27%);
+$neutral-white: hsl(0, 0%, 100%);
+
+$border-radius: 15px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    p{
+        font-size: 18px;
+    }
+    font-family: 'Outfit', sans-serif;
+    background-color: $neutral-mainBG;
+    color: $primary-softblue;
+    
+}
+
+
+
+.card{
+    width: 300px;
+    padding: 20px;
+    border-radius: $border-radius;
+    background-color: $neutral-cardBG;
+
+    .imagen{
+        img{
+            border-radius: $border-radius;
+            width: 100%;
+        }
+    }
+
+    .card-title{
+        font-size: 1.3em;
+        font-weight: 600;   
+        color: $neutral-white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        &:hover{
+            color: $primary-cyan;
+        }
+    }
+
+    .card-text{
+        margin-bottom: 15px;
+        // font-size: 18px;
+
+    }
+
+    .features{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        .eth{
+            color: $primary-cyan;
+        }
+        margin-bottom: 15px;
+    }
+    
+    
+
+    .autor{
+        display: flex;
+        align-items: center;
+        img{
+            margin: 10px 10px 10px 0;
+            width: 30px;
+            border: 2px solid $neutral-white;
+            border-radius: 50%;
+        }
+        span{
+            span{
+                color: $neutral-white;
+                &:hover{
+                    color: $primary-cyan;
+                }
+            }
+        }
+    }
+}
