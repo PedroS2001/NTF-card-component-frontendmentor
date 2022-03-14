@@ -14,20 +14,43 @@ body {
   width: 300px;
   padding: 20px;
   border-radius: 15px;
-  background-color: #14253d; }
-  .card .imagen img {
-    border-radius: 15px;
-    width: 100%; }
+  background-color: #14253d;
+  margin: 15px; }
+  .card .imagen {
+    position: relative; }
+    .card .imagen span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 255, 255, 0.5);
+      position: absolute;
+      z-index: 1;
+      /*Para que este delante de la imagen al aparecer*/
+      visibility: hidden;
+      border-radius: 10px; }
+    .card .imagen:active {
+      cursor: pointer; }
+      .card .imagen:active span {
+        visibility: visible; }
+    .card .imagen #card-image {
+      border-radius: 10px;
+      width: 100%; }
   .card .card-title {
     font-size: 1.3em;
     font-weight: 600;
     color: white;
     margin-top: 15px;
     margin-bottom: 15px; }
-    .card .card-title:hover {
+    .card .card-title:active {
+      cursor: pointer;
       color: #00fff7; }
   .card .card-text {
     margin-bottom: 15px; }
+  .card hr {
+    border: 0 none black;
+    border-top: 1px solid #2f415b; }
   .card .features {
     display: flex;
     justify-content: space-between;
@@ -35,6 +58,8 @@ body {
     margin-bottom: 15px; }
     .card .features .eth {
       color: #00fff7; }
+    .card .features i {
+      margin: 5px; }
   .card .autor {
     display: flex;
     align-items: center; }
@@ -45,5 +70,6 @@ body {
       border-radius: 50%; }
     .card .autor span span {
       color: white; }
-      .card .autor span span:hover {
+      .card .autor span span:active {
+        cursor: pointer;
         color: #00fff7; }
