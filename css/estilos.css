@@ -30,9 +30,9 @@ body {
       /*Para que este delante de la imagen al aparecer*/
       visibility: hidden;
       border-radius: 10px; }
-    .card .imagen:active {
+    .card .imagen:hover {
       cursor: pointer; }
-      .card .imagen:active span {
+      .card .imagen:hover span {
         visibility: visible; }
     .card .imagen #card-image {
       border-radius: 10px;
@@ -43,7 +43,7 @@ body {
     color: white;
     margin-top: 15px;
     margin-bottom: 15px; }
-    .card .card-title:active {
+    .card .card-title:hover {
       cursor: pointer;
       color: #00fff7; }
   .card .card-text {
@@ -70,6 +70,14 @@ body {
       border-radius: 50%; }
     .card .autor span span {
       color: white; }
-      .card .autor span span:active {
+      .card .autor span span:hover {
         cursor: pointer;
         color: #00fff7; }
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
